@@ -28,6 +28,19 @@ Python · PySpark · scikit-learn (Isolation Forest) · Power BI · pandas
 └── requirements.txt
 ```
 
+## Architecture
+
+```mermaid
+flowchart LR
+    R[CMS Part B/D raw data] --> S[PySpark ETL]
+    S --> C[Cleaned features]
+    C --> IF[Isolation Forest]
+    IF --> Sc[Fraud scores]
+    Sc --> Dash[Power BI dashboard]
+```
+
+**Skills demonstrated:** large-scale data engineering with PySpark, unsupervised anomaly detection (Isolation Forest), and turning model output into a stakeholder-facing dashboard.
+
 ## Data
 
 The raw datasets are **not included** in this repository (they are large and
