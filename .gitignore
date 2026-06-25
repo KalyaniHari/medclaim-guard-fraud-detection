@@ -1,0 +1,13 @@
+# Ignore large datasets
+data/raw/*
+data/processed/*
+
+# Ignore Power BI files
+*.pbix
+
+# Ignore notebook checkpoints
+Notebooks/.ipynb_checkpoints/
+
+# Ignore temporary files
+*.tmp
+*.log
